@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>This libary is for adding JST-XH headers to you're project. It has pins 3-7. 
+This is usefull for ballance connectors on lithium polymer batteries from 2-6 cells. 
+The pin spacing was based on the datasheet that can be found here
+http://www.jst-mfg.com/product/pdf/eng/eXH.pdf</description>
+<packages>
+<package name="7_PIN_JST-XH">
+<wire x1="0" y1="0" x2="2.45" y2="0" width="0.127" layer="21"/>
+<wire x1="2.45" y1="0" x2="17.45" y2="0" width="0.127" layer="21"/>
+<wire x1="17.45" y1="0" x2="19.9" y2="0" width="0.127" layer="21"/>
+<wire x1="19.9" y1="0" x2="19.9" y2="5.75" width="0.127" layer="21"/>
+<wire x1="19.9" y1="5.75" x2="0" y2="5.75" width="0.127" layer="21"/>
+<wire x1="0" y1="5.75" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$1" x="2.45" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$2" x="4.95" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$3" x="7.45" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$4" x="9.95" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$5" x="12.45" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$6" x="14.95" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$7" x="17.45" y="3.4" drill="0.8" shape="square"/>
+<wire x1="2.45" y1="0" x2="2.45" y2="1" width="0.127" layer="21"/>
+<wire x1="17.45" y1="0" x2="17.45" y2="1" width="0.127" layer="21"/>
+</package>
+<package name="6_PIN_JST-XH">
+<wire x1="0" y1="0" x2="2.45" y2="0" width="0.127" layer="21"/>
+<wire x1="2.45" y1="0" x2="14.95" y2="0" width="0.127" layer="21"/>
+<wire x1="14.95" y1="0" x2="17.4" y2="0" width="0.127" layer="21"/>
+<wire x1="17.4" y1="0" x2="17.4" y2="5.75" width="0.127" layer="21"/>
+<wire x1="17.4" y1="5.75" x2="0" y2="5.75" width="0.127" layer="21"/>
+<wire x1="0" y1="5.75" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$1" x="2.45" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$2" x="4.95" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$3" x="7.45" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$4" x="9.95" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$5" x="12.45" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$6" x="14.95" y="3.4" drill="0.8" shape="square"/>
+<wire x1="2.45" y1="0" x2="2.45" y2="1" width="0.127" layer="21"/>
+<wire x1="14.95" y1="0" x2="14.95" y2="1" width="0.127" layer="21"/>
+</package>
+<package name="5_PIN_JST-XH">
+<wire x1="0" y1="0" x2="2.45" y2="0" width="0.127" layer="21"/>
+<wire x1="2.45" y1="0" x2="12.45" y2="0" width="0.127" layer="21"/>
+<wire x1="12.45" y1="0" x2="14.9" y2="0" width="0.127" layer="21"/>
+<wire x1="14.9" y1="0" x2="14.9" y2="5.75" width="0.127" layer="21"/>
+<wire x1="14.9" y1="5.75" x2="0" y2="5.75" width="0.127" layer="21"/>
+<wire x1="0" y1="5.75" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$1" x="2.45" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$2" x="4.95" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$3" x="7.45" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$4" x="9.95" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$5" x="12.45" y="3.4" drill="0.8" shape="square"/>
+<wire x1="2.45" y1="1" x2="2.45" y2="0" width="0.127" layer="21"/>
+<wire x1="12.45" y1="0" x2="12.45" y2="1" width="0.127" layer="21"/>
+</package>
+<package name="4_PIN_JST-XH">
+<pad name="P$1" x="2.45" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$2" x="4.95" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$3" x="7.45" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$4" x="9.95" y="3.4" drill="0.8" shape="square"/>
+<wire x1="0" y1="0" x2="2.45" y2="0" width="0.127" layer="21"/>
+<wire x1="2.45" y1="0" x2="9.95" y2="0" width="0.127" layer="21"/>
+<wire x1="9.95" y1="0" x2="12.4" y2="0" width="0.127" layer="21"/>
+<wire x1="12.4" y1="0" x2="12.4" y2="5.75" width="0.127" layer="21"/>
+<wire x1="12.4" y1="5.75" x2="0" y2="5.75" width="0.127" layer="21"/>
+<wire x1="0" y1="5.75" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="2.45" y1="1" x2="2.45" y2="0" width="0.127" layer="21"/>
+<wire x1="9.95" y1="0" x2="9.95" y2="1" width="0.127" layer="21"/>
+</package>
+<package name="3_PIN_JST-XH">
+<wire x1="0" y1="0" x2="2.45" y2="0" width="0.127" layer="21"/>
+<wire x1="2.45" y1="0" x2="7.45" y2="0" width="0.127" layer="21"/>
+<wire x1="7.45" y1="0" x2="9.9" y2="0" width="0.127" layer="21"/>
+<wire x1="9.9" y1="0" x2="9.9" y2="5.75" width="0.127" layer="21"/>
+<wire x1="9.9" y1="5.75" x2="0" y2="5.75" width="0.127" layer="21"/>
+<wire x1="0" y1="5.75" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="P$1" x="2.45" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$2" x="4.95" y="3.4" drill="0.8" shape="square"/>
+<pad name="P$3" x="7.45" y="3.4" drill="0.8" shape="square"/>
+<wire x1="2.45" y1="0" x2="2.45" y2="1" width="0.127" layer="21"/>
+<wire x1="7.45" y1="0" x2="7.45" y2="1" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="7_PIN_JST-XH">
+<wire x1="0" y1="5" x2="17.5" y2="5" width="0.254" layer="94"/>
+<wire x1="17.5" y1="5" x2="20" y2="5" width="0.254" layer="94"/>
+<wire x1="20" y1="5" x2="20" y2="12.5" width="0.254" layer="94"/>
+<wire x1="20" y1="12.5" x2="0" y2="12.5" width="0.254" layer="94"/>
+<wire x1="0" y1="12.5" x2="0" y2="5" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="17.5" y1="5" x2="17.5" y2="7.5" width="0.254" layer="94"/>
+<pin name="P$1" x="2.54" y="0" length="middle" rot="R90"/>
+<pin name="P$2" x="5.08" y="0" length="middle" rot="R90"/>
+<pin name="P$3" x="7.62" y="0" length="middle" rot="R90"/>
+<pin name="P$4" x="10.16" y="0" length="middle" rot="R90"/>
+<pin name="P$5" x="12.7" y="0" length="middle" rot="R90"/>
+<pin name="P$6" x="15.24" y="0" length="middle" rot="R90"/>
+<pin name="P$7" x="17.78" y="0" length="middle" rot="R90"/>
+</symbol>
+<symbol name="6_PIN_JST-XH">
+<wire x1="-2.5" y1="5" x2="0" y2="5" width="0.254" layer="94"/>
+<wire x1="0" y1="5" x2="12.5" y2="5" width="0.254" layer="94"/>
+<wire x1="12.5" y1="5" x2="15" y2="5" width="0.254" layer="94"/>
+<wire x1="15" y1="5" x2="15" y2="12.5" width="0.254" layer="94"/>
+<wire x1="15" y1="12.5" x2="-2.5" y2="12.5" width="0.254" layer="94"/>
+<wire x1="-2.5" y1="12.5" x2="-2.5" y2="5" width="0.254" layer="94"/>
+<wire x1="0" y1="5" x2="0" y2="7.5" width="0.254" layer="94"/>
+<wire x1="12.5" y1="5" x2="12.5" y2="7.5" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="0" length="middle" rot="R90"/>
+<pin name="P$2" x="2.54" y="0" length="middle" rot="R90"/>
+<pin name="P$3" x="5.08" y="0" length="middle" rot="R90"/>
+<pin name="P$4" x="7.62" y="0" length="middle" rot="R90"/>
+<pin name="P$5" x="10.16" y="0" length="middle" rot="R90"/>
+<pin name="P$6" x="12.7" y="0" length="middle" rot="R90"/>
+</symbol>
+<symbol name="5_PIN_JST-XH">
+<wire x1="0" y1="5" x2="2.5" y2="5" width="0.254" layer="94"/>
+<wire x1="2.5" y1="5" x2="12.5" y2="5" width="0.254" layer="94"/>
+<wire x1="12.5" y1="5" x2="15" y2="5" width="0.254" layer="94"/>
+<wire x1="15" y1="5" x2="15" y2="12.5" width="0.254" layer="94"/>
+<wire x1="15" y1="12.5" x2="0" y2="12.5" width="0.254" layer="94"/>
+<wire x1="0" y1="12.5" x2="0" y2="5" width="0.254" layer="94"/>
+<wire x1="2.5" y1="5" x2="2.5" y2="7.5" width="0.254" layer="94"/>
+<wire x1="12.5" y1="5" x2="12.5" y2="7.5" width="0.254" layer="94"/>
+<pin name="P$1" x="2.54" y="0" length="middle" rot="R90"/>
+<pin name="P$2" x="5.08" y="0" length="middle" rot="R90"/>
+<pin name="P$3" x="7.62" y="0" length="middle" rot="R90"/>
+<pin name="P$4" x="10.16" y="0" length="middle" rot="R90"/>
+<pin name="P$5" x="12.7" y="0" length="middle" rot="R90"/>
+</symbol>
+<symbol name="4_PIN_JST-XH">
+<wire x1="0" y1="5" x2="2.5" y2="5" width="0.254" layer="94"/>
+<wire x1="10" y1="5" x2="12.5" y2="5" width="0.254" layer="94"/>
+<wire x1="12.5" y1="5" x2="12.5" y2="12.5" width="0.254" layer="94"/>
+<wire x1="12.5" y1="12.5" x2="0" y2="12.5" width="0.254" layer="94"/>
+<wire x1="0" y1="12.5" x2="0" y2="5" width="0.254" layer="94"/>
+<wire x1="2.5" y1="7.5" x2="2.5" y2="5" width="0.254" layer="94"/>
+<wire x1="2.5" y1="5" x2="10" y2="5" width="0.254" layer="94"/>
+<wire x1="10" y1="5" x2="10" y2="7.5" width="0.254" layer="94"/>
+<pin name="P$1" x="2.54" y="0" length="middle" rot="R90"/>
+<pin name="P$2" x="5.08" y="0" length="middle" rot="R90"/>
+<pin name="P$3" x="7.62" y="0" length="middle" rot="R90"/>
+<pin name="P$4" x="10.16" y="0" length="middle" rot="R90"/>
+</symbol>
+<symbol name="3_PIN_JST-XH">
+<wire x1="0" y1="5" x2="2.5" y2="5" width="0.254" layer="94"/>
+<wire x1="2.5" y1="5" x2="7.5" y2="5" width="0.254" layer="94"/>
+<wire x1="7.5" y1="5" x2="10" y2="5" width="0.254" layer="94"/>
+<wire x1="10" y1="5" x2="10" y2="12.5" width="0.254" layer="94"/>
+<wire x1="10" y1="12.5" x2="0" y2="12.5" width="0.254" layer="94"/>
+<wire x1="0" y1="12.5" x2="0" y2="5" width="0.254" layer="94"/>
+<wire x1="2.5" y1="5" x2="2.5" y2="7.5" width="0.254" layer="94"/>
+<wire x1="7.5" y1="5" x2="7.5" y2="7.5" width="0.254" layer="94"/>
+<pin name="P$1" x="2.54" y="0" length="middle" rot="R90"/>
+<pin name="P$2" x="5.08" y="0" length="middle" rot="R90"/>
+<pin name="P$3" x="7.62" y="0" length="middle" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="7_PIN_JST-XH">
+<gates>
+<gate name="G$1" symbol="7_PIN_JST-XH" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="7_PIN_JST-XH">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+<connect gate="G$1" pin="P$7" pad="P$7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="6_PIN_JST-XH">
+<gates>
+<gate name="G$1" symbol="6_PIN_JST-XH" x="2.54" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="6_PIN_JST-XH">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5_PIN_JST-XH">
+<gates>
+<gate name="G$1" symbol="5_PIN_JST-XH" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="5_PIN_JST-XH">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="4_PIN_JST-XH">
+<gates>
+<gate name="G$1" symbol="4_PIN_JST-XH" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="4_PIN_JST-XH">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3_PIN_JST-XH">
+<gates>
+<gate name="G$1" symbol="3_PIN_JST-XH" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="3_PIN_JST-XH">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
