@@ -60,14 +60,17 @@
 <package name="CSM223-50AE">
 <hole x="-22.5" y="0" drill="1.5"/>
 <hole x="22.5" y="0" drill="1.5"/>
-<wire x1="-25" y1="-1.5" x2="-6.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-6.5" y1="-1.5" x2="6.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="6.5" y1="-1.5" x2="25" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="25" y1="-1.5" x2="25" y2="9" width="0.127" layer="21"/>
+<wire x1="-25" y1="-1.7" x2="-6.5" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-1.7" x2="6.5" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-1.7" x2="25" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="25" y1="-1.7" x2="25" y2="1.7" width="0.127" layer="21"/>
+<wire x1="25" y1="1.7" x2="25" y2="9" width="0.127" layer="21"/>
 <wire x1="25" y1="9" x2="-25" y2="9" width="0.127" layer="21"/>
-<wire x1="-25" y1="9" x2="-25" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-6.5" y1="-1.5" x2="-6.5" y2="0" width="0.127" layer="21"/>
-<wire x1="6.5" y1="-1.5" x2="6.5" y2="0" width="0.127" layer="21"/>
+<wire x1="-25" y1="9" x2="-25" y2="1.7" width="0.127" layer="21"/>
+<wire x1="-25" y1="1.7" x2="-25" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-1.7" x2="-6.5" y2="0" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-1.7" x2="6.5" y2="0" width="0.127" layer="21"/>
+<wire x1="-25" y1="1.7" x2="25" y2="1.7" width="0.127" layer="21" style="longdash"/>
 </package>
 <package name="MA-101-27E">
 <hole x="-11.5" y="12" drill="2.5"/>
@@ -86,6 +89,27 @@
 <wire x1="-13.5" y1="-10.5" x2="13.5" y2="-10.5" width="0.127" layer="21" style="shortdash"/>
 <wire x1="0" y1="11" x2="0" y2="10" width="0.127" layer="21" style="shortdash"/>
 <wire x1="0" y1="-11" x2="0" y2="-10" width="0.127" layer="21" style="shortdash"/>
+</package>
+<package name="PA-T2X-38E">
+<wire x1="-15" y1="0" x2="15" y2="0" width="0.127" layer="21"/>
+<wire x1="15" y1="0" x2="15" y2="17.5" width="0.127" layer="21"/>
+<wire x1="15" y1="17.5" x2="-15" y2="17.5" width="0.127" layer="21"/>
+<wire x1="-15" y1="17.5" x2="-15" y2="0" width="0.127" layer="21"/>
+<pad name="P$1" x="-9" y="3.1" drill="2.67"/>
+<pad name="P$2" x="9" y="3.1" drill="2.67"/>
+<text x="0" y="18.5" size="1.27" layer="25" align="center">&gt;NAME</text>
+</package>
+<package name="RA-T2X">
+<wire x1="-21" y1="12.5" x2="-21" y2="-12.5" width="0.127" layer="21"/>
+<wire x1="-21" y1="-12.5" x2="-12.5" y2="-12.5" width="0.127" layer="21"/>
+<wire x1="12.5" y1="-12.5" x2="21" y2="-12.5" width="0.127" layer="21"/>
+<wire x1="21" y1="-12.5" x2="21" y2="12.5" width="0.127" layer="21"/>
+<wire x1="21" y1="12.5" x2="-21" y2="12.5" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="0" x2="-12.5" y2="-12.5" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="0" x2="12.5" y2="0" width="0.127" layer="21"/>
+<wire x1="12.5" y1="0" x2="12.5" y2="-12.5" width="0.127" layer="21"/>
+<pad name="P$1" x="-12.7" y="0" drill="2.5"/>
+<pad name="P$2" x="12.7" y="0" drill="2.5"/>
 </package>
 </packages>
 <symbols>
@@ -129,6 +153,30 @@
 </gates>
 <devices>
 <device name="" package="MA-101-27E">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PA-T2X-38E">
+<gates>
+<gate name="G$1" symbol="HEATSINK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PA-T2X-38E">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RA-T2X">
+<gates>
+<gate name="G$1" symbol="HEATSINK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RA-T2X">
 <technologies>
 <technology name=""/>
 </technologies>
