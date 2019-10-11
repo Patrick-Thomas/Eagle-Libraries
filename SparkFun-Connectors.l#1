@@ -31442,8 +31442,8 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 <devices>
 <device name="" package="XT90">
 <connects>
-<connect gate="G$1" pin="+" pad="P$1"/>
-<connect gate="G$1" pin="-" pad="P$2"/>
+<connect gate="G$1" pin="+" pad="P$2"/>
+<connect gate="G$1" pin="-" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>

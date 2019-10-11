@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="0" number="4" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="0" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="4" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="4" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="COILCRAFT_EPL3015-472ML_0">
+                    <description>Shielded Power Inductors – EPL3015</description>
+                    <wire layer="51" y2="1.5" width="0.15" x2="-1.5" y1="-1.5" x1="-1.5"/>
+                    <wire layer="51" y2="1.5" width="0.15" x2="1.5" y1="1.5" x1="-1.5"/>
+                    <wire layer="51" y2="-1.5" width="0.15" x2="1.5" y1="1.5" x1="1.5"/>
+                    <wire layer="51" y2="-1.5" width="0.15" x2="-1.5" y1="-1.5" x1="1.5"/>
+                    <wire layer="41" y2="1.7" width="0.1" x2="-1.7" y1="-1.7" x1="-1.7"/>
+                    <wire layer="41" y2="1.7" width="0.1" x2="1.7" y1="1.7" x1="-1.7"/>
+                    <wire layer="41" y2="-1.7" width="0.1" x2="1.7" y1="1.7" x1="1.7"/>
+                    <wire layer="41" y2="-1.7" width="0.1" x2="-1.7" y1="-1.7" x1="1.7"/>
+                    <wire layer="21" y2="1.85" width="0.15" x2="-1.5" y1="1.85" x1="1.5"/>
+                    <wire layer="21" y2="-1.85" width="0.15" x2="-1.5" y1="-1.85" x1="1.5"/>
+                    <text layer="25" align="bottom-left" y="2.125" x="-1.975" rot="R0" size="1.0">&gt;NAME</text>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="1.0" dy="2.9" y="0.0" x="-1.015" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="1.0" dy="2.9" y="0.0" x="1.015" rot="R0" cream="yes"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="COILCRAFT_EPL3015-472ML_0_0">
+                    <description>Shielded Power Inductors – EPL3015</description>
+                    <wire layer="94" y2="-2.54" width="0.254" curve="180.0" x2="1.27" y1="-2.54" x1="3.81"/>
+                    <wire layer="94" y2="-2.54" width="0.254" curve="180.0" x2="3.81" y1="-2.54" x1="6.35"/>
+                    <wire layer="94" y2="-2.54" width="0.254" curve="180.0" x2="6.35" y1="-2.54" x1="8.89"/>
+                    <wire layer="94" y2="-2.54" width="0.15" x2="1.27" y1="-2.54" x1="4.4408920985e-16"/>
+                    <wire layer="94" y2="-2.54" width="0.15" x2="8.89" y1="-2.54" x1="10.16"/>
+                    <text layer="95" align="top-left" y="-5.08" x="1.27" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-7.62" x="1.27" rot="R0" size="2.54">4.7µH</text>
+                    <pin name="1" visible="pad" length="middle" y="-2.54" x="-5.08"/>
+                    <pin name="2" visible="pad" length="middle" y="-2.54" x="15.24" rot="R180"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="L" name="COILCRAFT_EPL3015-472ML">
+                    <description>Shielded Power Inductors – EPL3015</description>
+                    <gates>
+                        <gate name="G$0" symbol="COILCRAFT_EPL3015-472ML_0_0" x="0"/>
+                    </gates>
+                    <devices>
+                        <device name="COILCRAFT_EPL3015-472ML_0_0" package="COILCRAFT_EPL3015-472ML_0">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="1"/>
+                                <connect gate="G$0" pad="2" pin="2"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="inductance" value="4.7µH"/>
+                                    <attribute name="mouser_part_number" value="994-EPL3015-472MLB"/>
+                                    <attribute name="package" value="SMT_EPL3015-472ML"/>
+                                    <attribute name="digikey_description" value="IND "/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="lead_free" value="yes"/>
+                                    <attribute name="rohs" value="yes"/>
+                                    <attribute name="prefix" value="L"/>
+                                    <attribute name="DC_Resistance" value="145mΩ"/>
+                                    <attribute name="MF" value="Coilcraft"/>
+                                    <attribute name="MPN" value="EPL3015-472ML"/>
+                                    <attribute name="temperature_range_low" value="-40°C"/>
+                                    <attribute name="datasheet" value="http://www.coilcraft.com/pdfs/epl3015.pdf"/>
+                                    <attribute name="temperature_range_high" value="+85°C"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>
