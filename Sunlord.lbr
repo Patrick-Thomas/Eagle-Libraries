@@ -67,6 +67,36 @@
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="MWSA1206">
+<wire x1="-6.75" y1="6.4" x2="6.75" y2="6.4" width="0.127" layer="21"/>
+<wire x1="6.75" y1="6.4" x2="6.75" y2="-6.4" width="0.127" layer="21"/>
+<wire x1="6.75" y1="-6.4" x2="-6.75" y2="-6.4" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="-6.4" x2="-6.75" y2="6.4" width="0.127" layer="21"/>
+<smd name="P$1" x="-5.25" y="0" dx="5" dy="4.5" layer="1" rot="R90"/>
+<smd name="P$2" x="5.25" y="0" dx="5" dy="4.5" layer="1" rot="R90"/>
+<text x="-6" y="7" size="1.27" layer="25">&gt;NAME</text>
+<text x="1" y="7" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SWRB12">
+<wire x1="-6.25" y1="6.25" x2="6.25" y2="6.25" width="0.127" layer="21"/>
+<wire x1="6.25" y1="6.25" x2="6.25" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-6.25" x2="-6.25" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-6.25" x2="-6.25" y2="6.25" width="0.127" layer="21"/>
+<smd name="P$1" x="-5" y="0" dx="5.4" dy="2.9" layer="1" rot="R90"/>
+<smd name="P$2" x="5" y="0" dx="5.4" dy="2.9" layer="1" rot="R90"/>
+<text x="-6" y="7" size="1.27" layer="25">&gt;NAME</text>
+<text x="1" y="7" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="MWSA0518">
+<wire x1="-2.7" y1="2.6" x2="2.7" y2="2.6" width="0.127" layer="21"/>
+<wire x1="2.7" y1="2.6" x2="2.7" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-2.6" x2="-2.7" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="-2.6" x2="-2.7" y2="2.6" width="0.127" layer="21"/>
+<smd name="P$1" x="-2.05" y="0" dx="2.5" dy="1.9" layer="1" rot="R90"/>
+<smd name="P$2" x="2.05" y="0" dx="2.5" dy="1.9" layer="1" rot="R90"/>
+<text x="-2.5" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.5" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -89,6 +119,54 @@
 </gates>
 <devices>
 <device name="" package="MWSA0402">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MWSA1206" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MWSA1206">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWRB12" prefix="L">
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SWRB12">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MWSA0518" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MWSA0518">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>

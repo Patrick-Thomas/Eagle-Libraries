@@ -81,6 +81,7 @@
 <wire x1="-1.5" y1="-10.93" x2="-0.5" y2="-9.93" width="0.127" layer="21" curve="-90"/>
 <wire x1="-0.5" y1="-9.93" x2="0.5" y2="-9.93" width="0.127" layer="21"/>
 <wire x1="0.5" y1="-9.93" x2="1.5" y2="-10.93" width="0.127" layer="21" curve="-90"/>
+<text x="-6.35" y="6.35" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -90,6 +91,7 @@
 <wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="-7.62" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
